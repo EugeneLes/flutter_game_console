@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "targetOS",
+            "description": "Choose target OS",
+            "options": [
+                "ios",
+                "android",
+            ],
+            "default": "ios",
+        },
+    ],
+    "configurations": [
+        {
+            "name": "game_console",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "OS=${input:targetOS}",
+            ]
+        },
+        {
+            "name": "game_console mocked_backend",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "OS=${input:targetOS}",
+                "--dart-define",
+                "MOCKED=true",
+            ]
+        },
+        {
+            "name": "game_console (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "game_console (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "OS=${input:targetOS}",
+            ]
+        }
+    ]
+}

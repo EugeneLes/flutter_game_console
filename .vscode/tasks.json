@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"command": "fvm",
+			"args": [
+				"flutter",
+				"pub",
+				"run",
+				"build_runner",
+				"build",
+				"--delete-conflicting-outputs"
+			],
+			"problemMatcher": [
+				"$dart-build_runner"
+			],
+			"group": "build",
+			"label": "build_runner: main",
+			"detail": ""
+		},
+		{
+			"label": "build_runner: shared",
+			"command": "fvm",
+			"args": [
+				"flutter",
+				"pub",
+				"run",
+				"build_runner",
+				"build",
+				"--delete-conflicting-outputs"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/packages/shared"
+			},
+			"problemMatcher": [
+				"$dart-build_runner"
+			],
+			"group": "build"
+		},
+	]
+}
