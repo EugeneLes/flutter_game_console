@@ -11,4 +11,4 @@ PRODUCT_NAME = game_console_flutter
 PRODUCT_BUNDLE_IDENTIFIER = com.eugenel.gameConsoleFlutter
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 com.eugenel. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 com.eugenel. All rights reserved.

@@ -1,65 +1,36 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "files.autoSave": "afterDelay",
   "editor.formatOnType": true,
-  "editor.rulers": [
-    100
-  ],
-  "dart.flutterSdkPaths": [
-    "/Users/eugenel/fvm/versions"
-  ],
-  "dart.flutterSdkPath": "/Users/eugenel/fvm/versions/default",
+  "editor.rulers": [100],
+  "dart.flutterSdkPath": ".fvm/versions/3.47.7",
   "dart.debugSdkLibraries": true,
   "dart.lineLength": 100,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [
-      100
-    ],
+    "editor.rulers": [100],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.defaultFormatter": "Dart-Code.dart-code"
   },
   "command-runner.terminal.name": "runCommand",
   "command-runner.commands": {
-    "run build runner": "flutter pub run build_runner build --delete-conflicting-outputs",
-    "generate localization": "flutter pub run libg_localization:generate",
-    "flutter pub get": "flutter pub get",
+    "generate localization": "scripts/localize.sh",
+    "flutter pub get": "scripts/get_all.sh",
     "get all": "scripts/get_all.sh",
-    "clean all": "scripts/clean_all.sh",
+    "clean all": "scripts/clean_all.sh"
   },
   "window.title": "${dirty}${activeEditorShort}",
-  "terminal.integrated.profiles.windows": {
-    "PowerShell -NoProfile": {
-      "source": "PowerShell",
-      "args": [
-        "-NoProfile"
-      ]
-    }
-  },
   "git.autofetch": true,
-  "gitlens.codeLens.scopes": [
-    "document",
-    "containers"
-  ],
+  "gitlens.codeLens.scopes": ["document", "containers"],
   "gitlens.codeLens.recentChange.enabled": false,
-  "remote.SSH.remotePlatform": {
-    "192.168.100.16": "macOS"
-  },
-  "extensions.autoUpdate": false,
-  "Notes.notesLocation": "c:\\Users\\user\\source\\vscode notes",
   "diffEditor.ignoreTrimWhitespace": false,
-  "dart.debugExternalPackageLibraries": true,
-  "files.exclude": {
-    "**/*.swagger.dart": true,
-    "**/*.mocks.dart": true,
-    "**/swagger_generated_code/**": true,
-  }
+  "dart.debugExternalPackageLibraries": true
 }

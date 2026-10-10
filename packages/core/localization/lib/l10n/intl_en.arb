@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "title": "Game Console",
+  "@title": {
+    "description": "Application title"
+  }
+}
